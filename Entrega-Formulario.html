@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Bem vindo(a) à Marilia's Dispersonalizated!</h1>
+    <h3>Preencha o formulario abaixo para sabermos mais sobre você</h3>
+    <form>
+        <label for="nome"><p>Nome</p></label>
+        <input type="text" id="nome" required name="nome" placeholder="Digite seu nome...">
+        <label for="email"><p>Email</p></label>
+        <input type="text" id="email"  required name="email" placeholder="Digite seu email...">
+        
+        <br>
+        <br>
+
+        <label for="motivo"><p>Descreva o motivo por que escolheu a Marilia's Dispersonalizated</p></label>
+        <textarea 
+        id="motivo"
+        name="motivo"
+        placeholder="Digite aqui..."
+        cols="30"
+        rows="10"
+        required="true"></textarea>
+        
+        <br>
+        <br>
+        
+        <label for="modulo"><p>Selecione Seu Modulo</p></label>
+        <select id="modulo" name="modulo" required="true">
+            <option value=''>Escolha seu Módulo</option>
+            <option value="burgues">Burguês Safado</option>
+            <option value="humilde">Humilde</option>
+            <option value="fudeu">Se fode ai</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="senha"><p>Digite sua Senha</p></label>
+        <input type="text" id="senha" required name="senha" placeholder="Digite sua senha...">
+        <label for="senha"><p>Confirme sua senha</p></label>
+        <input type="text" id="senha" required name="senha" placeholder="Confirme sua senha...">
+
+        <br>
+        <br>
+
+        <p>Deseja receber novidades em seu email?</p>
+        <label for="sim">Sim</label>
+        <input type="radio" value="sim" required name="noticacao" id="sim">
+        <label for="nao">Não</label>
+        <input type="radio" value="nao" required name='noticacao' id="nao">
+
+        <br>
+        <br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
